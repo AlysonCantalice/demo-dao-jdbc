@@ -3,6 +3,7 @@ package application;
 import java.util.List;
 import java.util.Scanner;
 
+import db.DB;
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
@@ -40,6 +41,7 @@ public class Program2 {
 		System.out.println("Delete completed!");
 		
 		sc.close();
+		DB.closeConnection();
 	}
 
 }
